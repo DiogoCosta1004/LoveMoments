@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+    background: #1a1a1a; /* Fundo mais escuro */
+    color: #fff; /* Texto branco para contraste */
+}
+
+.container {
+    margin-top: 10%;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff4081;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.photo-container {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #ff4081;
+}
+
+.our-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery {
+    margin: 40px 0;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    color: #ff4081;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #ff4081;
+}
+
+.message {
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: justify; /* Alinhamento justificado */
+    line-height: 1.8; /* Espaçamento entre linhas */
+}
+
+.message h2 {
+    font-size: 2rem;
+    color: #ff4081;
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.message p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 15px; /* Espaço entre os parágrafos */
+    text-indent: 30px; /* Recuo na primeira linha de cada parágrafo */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #ff4081;
+    color: white;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #d81b60;
+}
+
+.dark-mode {
+    background: #111; /* Fundo ainda mais escuro no modo escuro */
+    color: white;
+}
+
+.dark-mode button {
+    background: #00bcd4;
+}
+
+.dark-mode button:hover {
+    background: #008ba3;
+}
+
+/* Fundo com gradiente escuro e animação */
+body {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    animation: animateBackground 20s linear infinite;
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Milhões de corações pequenos flutuando para cima e para baixo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff4081"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
+    background-repeat: repeat;
+    opacity: 0.1; /* Opacidade reduzida para um efeito mais sutil */
+    z-index: -1;
+    animation: floatHearts 10s ease-in-out infinite; /* Animação mais suave e contínua */
+    background-size: 20px 20px; /* Tamanho dos corações pequenos */
+}
+
+@keyframes floatHearts {
+    0% {
+        transform: translateY(0); /* Começa na posição inicial */
+    }
+    50% {
+        transform: translateY(-20%); /* Move para cima */
+    }
+    100% {
+        transform: translateY(0); /* Volta à posição inicial */
+    }
+}
