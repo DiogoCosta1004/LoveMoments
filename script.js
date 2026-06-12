@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const contador = document.getElementById("contador");
     const body = document.body;
 
-    const dataInicio = new Date("2023-11-05T00:00:00-03:00");
+    const dataInicio = new Date("2023-08-27T00:00:00-03:00");
 
     function atualizarContador() {
         const agora = new Date();
